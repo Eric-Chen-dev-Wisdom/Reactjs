@@ -1,0 +1,65 @@
+/* styles.css */
+.mood-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mood-board-heading {
+    text-align: center;
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+    margin: 30px 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .mood-board-item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  
+  .mood-board-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .mood-board-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .mood-board-text {
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #34495e;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.8);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .mood-board {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 15px;
+    }
+    
+  
